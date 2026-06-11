@@ -19,14 +19,14 @@ Mengembangkan sistem analisis untuk meramalkan peningkatan jumlah penumpang kere
 Dengan mempertimbangkan data inflasi pada tahun 2026 untuk meramalkan jumlah penumpang kereta api pada masa angkutan tahun 2026, serta mengevaluasi rata-rata penumpang berdasarkan data historis dari tahun 2024 hingga 2025.
 
 **Tujuan Project**  
-- Forecasting Berbasis Machine Learning: Membangun model *Multiple Linear Regression* spesifik per kategori layanan untuk memprediksi secara akurat volume penumpang kereta api sepanjang tahun 2026.
-- Analisis Dampak Makroekonomi: Mengukur dan memetakan korelasi antara fluktuasi inflasi bulanan (*Month-to-Month*) terhadap mobilitas komuter dan antarkota.
-- Pengembangan Dashboard Analitik: Menyediakan visualisasi data interaktif yang merangkum data historis (2024-2025) serta proyeksi masa depan untuk mempermudah pemahaman pengguna akhir.
+- Membangun model *Multiple Linear Regression* spesifik per kategori layanan untuk memprediksi secara akurat volume penumpang kereta api sepanjang tahun 2026.
+- Mengukur dan memetakan korelasi antara fluktuasi inflasi bulanan (*Month-to-Month*) terhadap mobilitas komuter dan antarkota.
+- Menyediakan visualisasi data interaktif yang merangkum data historis (2024-2025) serta proyeksi masa depan untuk mempermudah pemahaman pengguna akhir.
 
 **Manfaat Project**
-- Optimalisasi Operasional PT KAI: Menjadi landasan strategis untuk *capacity planning* (penambahan gerbong, jadwal, dan staf) dalam mengantisipasi puncak lonjakan penumpang pada kuartal keempat (Desember 2026).
-- Kebijakan Publik Berbasis Data: Membantu pembuat kebijakan dalam mengevaluasi resiliensi mobilitas masyarakat terhadap guncangan inflasi ekonomi.
-- Validasi Metodologi Ilmiah: Membuktikan efisiensi, transparansi, dan keandalan algoritma *Multiple Linear Regression* untuk penyelesaian masalah *time-series forecasting* pada sektor transportasi.
+- Menjadi landasan strategis untuk *capacity planning* dalam mengantisipasi puncak lonjakan penumpang pada kuartal keempat (Desember 2026).
+- Membantu pembuat kebijakan dalam mengevaluasi resiliensi mobilitas masyarakat terhadap guncangan inflasi ekonomi.
+- Membuktikan efisiensi, transparansi, dan keandalan algoritma *Multiple Linear Regression* untuk penyelesaian masalah *time-series forecasting* pada sektor transportasi.
 
 ---
 
