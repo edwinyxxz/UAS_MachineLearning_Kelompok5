@@ -47,7 +47,7 @@ Dengan mempertimbangkan data inflasi pada tahun 2026 untuk meramalkan jumlah pen
     ( https://www.bps.go.id/id/statistics-table/2/MSMy/inflasi-bulanan-m-to-m-.html )
 
 - **Metode Pengambilan:**
-  - isi
+  - Menggunakan pandas read_csv untuk membaca data dalam bentuk csv. hasil dari pengambilan tersebut disimpan pada dataframe yang siap untuk dilakukan transform
   - isi
   - isi
   
@@ -56,47 +56,49 @@ Dengan mempertimbangkan data inflasi pada tahun 2026 untuk meramalkan jumlah pen
 ## Transform (Pembersihan & Transformasi)
 
 - **Cleaning:**
-  - isi
-  - isi
+  - Filter inflasi agar hanya menggunakan data Indonesia sebagai acuan data nasional.
+  - Rename kolom Kategori pada jumlah penumpang kereta. 
 
 - **Transformasi:**
-  - isi
-  - isi
+  - Melt data inflasi dan jumlah penumpang kereta untuk mengubah format data dari wide ke long.
+  - Merge Cleaned data inflasi dan jumlah penumpang pada kolom Tahun dan Bulan.
+  - Sort Cleaned data final berdasarkan Tanggal.
 
 ---
 
-## Load ( Pemindahan ke Target ) benarkan saja
+## Load ( Pemindahan ke Target )
 
 - **Target:**
-  - isi
+  - Sebuah tabel baru di dalam database pada server Aiven. Tabel ini merupakan output utama yang dapat diakses oleh layanan lain untuk melakukan analisis langsung di database.
  
 - **Metode:**
-  - isi
-  - isi
+  - Fungsi to_sql() dari pandas digunakan untuk menulis data dari DataFrame langsung ke tabel di database MySQL.
  
-- **apa lagi**
-
----
+- **Check Data**
+  - Check data apakah sudah masuk kedalam database dengan pandas read_sql yang berisi query "SELECT * FROM Tablename WHERE Tahun = 2024 limit 15;"
 
 ## Arsitektur / Workflow ETL
 
-- **Alur (benarkan)**
-  - isi saja
+- **Alur**
+  - Extract data mentah inflasi dan jumlah penumpang 2024-2025
+  - Transform data mentah seperti filter kolom sesuai dengan kebutuhan, Melt agar mengubah format wide ke long, dan Merge cleaned data inflasi dan jumlah penumpang kereta menjadi 1 data utuh cleaned_data.
+  - Load cleaned_data ke Aiven database dengan pandas.to_sql() dan sqlalchemy untuk koneksi ke database Mysql aiven.
  
 - **Tools**
-  - isi saja
+  - Python 3
+  - Library: pandas, glob, re(RegexExpression), sqlalchemy, sklearn(Linear regression), matplotlib.pyplot.
+  - Playform: Google colab 
  
 ---
 
 ## Kode Program
 
 - **Struktur Kode:**
-  - isi
-  - isi
+  - Terdapat 2 notebook: Pipeline untuk ETL dan Machine Learning.
     
 - **Machine Learning:**
-  - isi
-  - isi
+  - Model: Linear regression
+  - Visualisasi: matplotlib.pyplot
  
 - **Link Projek:**
   - ETL Pipeline: https://colab.research.google.com/drive/1oQ-F58hhUYGuqi2PGdh4xIWsMjDFdTYu?usp=sharing
