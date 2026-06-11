@@ -48,8 +48,6 @@ Dengan mempertimbangkan data inflasi pada tahun 2026 untuk meramalkan jumlah pen
 
 - **Metode Pengambilan:**
   - Menggunakan pandas read_csv untuk membaca data dalam bentuk csv. hasil dari pengambilan tersebut disimpan pada dataframe yang siap untuk dilakukan transform
-  - isi
-  - isi
   
 ---
 
